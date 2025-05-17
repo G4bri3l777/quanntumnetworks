@@ -1,0 +1,21 @@
+// .vscode/launch.json
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Python: Run Current File (venv)",
+        // use the Python extension’s debugger, not raw debugpy
+        "type": "python",  
+        "request": "launch",
+        // debug whatever file you have open
+        "program": "${file}",  
+        // ensure cwd is your project root
+        "cwd": "${workspaceFolder}",  
+        // run in a real terminal that sources activate
+        "console": "integratedTerminal",  
+        // point directly at your venv’s Python binary
+        "interpreterPath": "${workspaceFolder}/.venv/bin/python"
+      }
+    ]
+  }
+  
