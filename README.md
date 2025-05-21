@@ -1,4 +1,4 @@
-# CCNY-Pre PhD project
+# A benchmarking procedure for quantum networks
 
 ## Prerequisites
 
