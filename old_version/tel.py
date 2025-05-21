@@ -1,6 +1,8 @@
 # teleportationnoisemodel.py
 from netsquid.components.models.qerrormodels import QuantumErrorModel
 from netsquid.qubits.qubitapi import reduced_dm, assign_qstate
+from netsquid.qubits.qubitapi import *
+from netsquid.qubits.qformalism import *
 import numpy as np
 
 
@@ -29,6 +31,8 @@ class TeleportationNoiseModel(QuantumErrorModel):
         for q in qubits:
             if q is None:                     
                 continue
-            rho   = reduced_dm(q)             # 2 × 2 
+            print(q)
+            rho = reduced_dm([q])           # 2 × 2 
+            print("rho", rho)
             noisy = a * rho + (1 - a) * k0    # convex mix
-            assign_qstate([q], noisy)         # update the cahannel
+            assign_qstate([q], noisy)       # update the cahannel

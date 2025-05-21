@@ -27,7 +27,7 @@ from netsquid.qubits import ketstates as ks
 from netsquid.qubits.state_sampler import StateSampler
 
 from n_node_RB import MultiNodeRB
-from teleportationnoisemodel_v1 import TeleportationNoiseModel
+from updated_algorithm.updated_teleportation import TeleportationNoiseModel
 
 import pickle as pk
 ns.sim_reset()

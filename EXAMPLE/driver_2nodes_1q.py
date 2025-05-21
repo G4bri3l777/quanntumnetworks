@@ -10,10 +10,10 @@ from netsquid.components.models.delaymodels import FixedDelayModel
 from netsquid.components.qchannel import QuantumChannel
 from netsquid.nodes.connections import DirectConnection
 import netsquid.qubits.ketstates as ks
-from teleportationnoisemodel_v1 import TeleportationNoiseModel 
+from updated_algorithm.updated_teleportation import TeleportationNoiseModel 
 from netsquid.components.models.delaymodels import FibreDelayModel
 from netsquid.components.component  import Port
-from _generate_cliffords import generate_cliffords
+from updated_algorithm._generate_cliffords import generate_cliffords
 from protocol_final_1q import TwoNodeHalfBounce
 from netsquid.qubits import set_qstate_formalism, QFormalism
 from netsquid.qubits.qubitapi import create_qubits

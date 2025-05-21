@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import netsquid as ns
 from netsquid import pydynaa
 from netsquid.qubits.ketstates import b00
-from netsquid.qubits.qubitapi import QFormalism
+from netsquid.qubits import QFormalism
 from netsquid.nodes.connections import DirectConnection
 from netsquid.components.qmemory import QuantumMemory
 from netsquid.components.qsource import QSource
@@ -24,10 +24,10 @@ from netsquid.components.qprogram import *
 from netsquid.util.simstats import *
 
 from netsquid.qubits import ketstates as ks
-from netsquid.qubits.state_sampler import StateSampler
+from prot_test import MultiNodeRB
 
-from n_node_RB_v0 import MultiNodeRB
-from teleportationnoisemodel_v1 import TeleportationNoiseModel
+
+from tel import TeleportationNoiseModel
 
 import pickle as pk
 ns.sim_reset()
